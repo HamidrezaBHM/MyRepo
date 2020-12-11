@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mahmoud-eskandari/NumToPersian/dist/num2persian-min.js"></script>
+    <script src="//cdn.jsdelivr.net/jspersiancal/0.2.1/js-persian-cal.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"> -->
+    <title>Print Check</title>
+
+</head>
+
+<body>
+    <span class="container">
+        <div class="inputs">
+            <form id="check-form">
+            <p>مبلغ</p>
+            <input name="price" type="text" id="DEMO" data-a-sign="" data-a-dec="," data-a-sep="." class="form-control">
+            
+            <p>تاریخ</p>
+            <input name="date" type="text" id="pcal1" class="pdate">
+            <p>در وجه:</p>
+            <input id="reciver" value="">
+            <button type="submit">send</button>
+        </form>
+        </div>
+
+        <div class="show-check">
+            <p id="price-val-sentence"></p>
+            <p id="price-val-num"></p>
+            <p id="date-val"></p>
+            <p id="reciver-val"></p>
+        </div>
+    </span>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
