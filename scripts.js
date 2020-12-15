@@ -5,6 +5,7 @@ anElement = new AutoNumeric('#DEMO', {
     decimalPlaces: 0
 });
 
+
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -20,6 +21,16 @@ function toFarsiNumber(n) {
 
         )
         .join('');
+}
+
+
+
+function toFarsiNumberforcal(n) {
+    arrcal = n.split("/")
+    year = toFarsiNumber(arrcal[0])
+    month = toFarsiNumber(arrcal[1])
+    day = toFarsiNumber(arrcal[2])
+    return year + '/' + month + '/' + day
 }
 
 
@@ -49,7 +60,8 @@ form.onsubmit = function(e) {
 
     document.getElementById("price-val-sentence").innerHTML = num.toPersianLetter() + ' ریال'
     document.getElementById("price-val-num").innerHTML = "/" + toPersianwithcomma(rawval) + "/"
-    document.getElementById("date-val").innerHTML = document.getElementById("pcal1").value
+    console.log(toFarsiNumberforcal(document.getElementById("pcal1").value))
+    document.getElementById("date-val").innerHTML = toFarsiNumberforcal(document.getElementById("pcal1").value)
     document.getElementById("reciver-val").innerHTML = document.getElementById("reciver").value
     console.log(rawval)
     console.log(toFarsiNumber(rawval))
