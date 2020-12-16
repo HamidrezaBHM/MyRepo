@@ -1,12 +1,9 @@
 .inputs {
+    order: 2;
     direction: rtl;
-    width: 400px;
+    width: 300px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
     float: right;
-    justify-content: center;
-    align-items: center;
 }
 
 @font-face {
@@ -15,58 +12,75 @@
 }
 
 .container {
-    width: 90%;
+    display: flex;
+    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    flex-direction: row;
+    height: auto;
+    border: #004 2px solid;
 }
 
 span {
-    display: block;
+    /* display: block; */
     width: 700px;
     height: 60px;
 }
 
 .show-check {
+    order: 1;
     position: relative;
-    width: 17cm;
-    height: 8.5cm;
+    width: 642.51968504px;
+    height: 321.25984252px;
     display: flex;
     flex-direction: column;
-    float: right;
+    /* float: right; */
     justify-content: center;
     align-items: center;
     border: #333 solid 2px;
+    margin-top: 40px;
+    margin-left: 20px;
+    /* background-image: url(Untitled-3.png); */
     /* transform: rotate(270deg); */
 }
 
 #price-val-sentence {
-    font-family: nastealiq;
+    /* font-family: nastealiq; */
     direction: rtl;
     position: absolute;
-    right: 5cm;
-    top: 3.3cm;
+    right: 188.97637795px;
+    top: 83.72440945px;
     font-size: 20px;
 }
 
 #price-val-num {
     letter-spacing: 2mm;
     position: absolute;
-    right: 10cm;
-    top: 6cm;
+    right: 377.95275591px;
+    top: 200.77165354px;
+    font-weight: bolder;
 }
 
 #date-val {
+    letter-spacing: .5mm;
     position: absolute;
-    right: 2.7cm;
-    top: 1.4cm;
+    right: 102.04724409px;
+    top: 28.913385827px;
+}
+
+#date-val-horofi {
+    font-size: 14px;
+    position: absolute;
+    right: 120.04724409px;
+    top: 56.913385827px;
 }
 
 #reciver-val {
     /* font-family: nastealiq; */
     direction: rtl;
     position: absolute;
-    right: 1.9cm;
-    top: 4.3cm;
+    right: 71.811023622px;
+    top: 130.51968504px;
     font-size: 20px;
 }
 
@@ -279,9 +293,13 @@ input.wide {
     .inputs {
         display: none;
     }
+    .container {
+        border: none;
+    }
     .show-check {
         position: absolute;
-        top: 0;
-        right: 0;
+        right: 70px;
+        top: 130px;
+        transform: rotate(270deg);
     }
 }
