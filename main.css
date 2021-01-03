@@ -46,11 +46,12 @@ span {
 
 #price-val-sentence {
     /* font-family: nastealiq; */
+    width: 390px;
     direction: rtl;
     position: absolute;
     right: 188.97637795px;
-    top: 83.72440945px;
-    font-size: 20px;
+    top: 99.72440945px;
+    font-size: 14px;
 }
 
 #price-val-num {
@@ -69,10 +70,10 @@ span {
 }
 
 #date-val-horofi {
-    font-size: 14px;
+    font-size: 10px;
     position: absolute;
     right: 120.04724409px;
-    top: 56.913385827px;
+    top: 63.913385827px;
 }
 
 #reciver-val {
@@ -301,5 +302,10 @@ input.wide {
         right: 70px;
         top: 130px;
         transform: rotate(270deg);
+        border: none;
+    }
+    div img {
+        width: 0;
+        height: 0;
     }
 }

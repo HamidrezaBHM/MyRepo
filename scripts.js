@@ -75,7 +75,7 @@ form.onsubmit = function(e) {
     console.log(document.getElementById("reciver").value)
 
 
-    document.getElementById("price-val-sentence").innerHTML = num.toPersianLetter() + " ریال معادل " + (num / 10).toPersianLetter() + " " + "تومان تمام" + "###"
+    document.getElementById("price-val-sentence").innerHTML = num.toPersianLetter() + " ریال معادل " + (Math.round(num / 10)).toPersianLetter() + " " + "تومان تمام" + "###"
     document.getElementById("price-val-num").innerHTML = "#" + toPersianwithcomma(rawval) + "#"
     console.log(toFarsiNumberforcal(document.getElementById("pcal1").value))
     document.getElementById("date-val").innerHTML = toFarsiNumberforcal(document.getElementById("pcal1").value)
